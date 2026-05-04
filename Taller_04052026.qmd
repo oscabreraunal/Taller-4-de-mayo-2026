@@ -115,6 +115,7 @@ Finalmente se obtiene:
 
 *This figure presents a detailed topographic and geological representation of the study area using a color palette composed of brown, beige, gray, and blue tones. The map displays a three-dimensional appearance through shading and elevation variations, allowing the visualization of terrain morphology and relief characteristics. Hydrological features such as rivers and streams are represented in blue, contrasting with the surrounding land surfaces. Additionally, several green points are distributed throughout the map, indicating locations or features of particular interest associated with the geological or territorial analysis. The map is oriented with north at the top and includes a scale bar, place labels, and a legend that provides additional information regarding the represented spatial features and symbology.*
 
-![Zona de estudio - Catatumbo (área de estudio)](data_taller04052026/Area_catatumbo.png){#fig-mapa-nieve fig-align="center" width="70%"}
+![GEOIA Pendiente y topografía](data_taller04052026/GEOAI_PENDIENTE_TOPOGRAFIA.png){#fig-mapa-nieve fig-align="center" width="70%"}
+
 
 
