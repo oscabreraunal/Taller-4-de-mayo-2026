@@ -63,6 +63,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#opengeoagent" id="toc-opengeoagent" class="nav-link" data-scroll-target="#opengeoagent"><span class="header-section-number">4.1</span> OpenGeoAgent</a></li>
   </ul></li>
   <li><a href="#google-earth-engine-gee" id="toc-google-earth-engine-gee" class="nav-link" data-scroll-target="#google-earth-engine-gee"><span class="header-section-number">5</span> Google Earth Engine (GEE)</a></li>
+  <li><a href="#geoai" id="toc-geoai" class="nav-link" data-scroll-target="#geoai"><span class="header-section-number">6</span> GEOAI</a></li>
   </ul>
 <div class="quarto-alternate-formats"><h2>Otros formatos</h2><ul><li><a href="Taller_04052026.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
 </div>
@@ -176,6 +177,47 @@ Figura&nbsp;2: Zona de estudio - Catatumbo
 </section>
 <section id="google-earth-engine-gee" class="level1" data-number="5">
 <h1 data-number="5"><span class="header-section-number">5</span> Google Earth Engine (GEE)</h1>
+<p>Google Earth Engine (GEE) es una plataforma de computación geoespacial basada en la nube, desarrollada por Google, que permite el almacenamiento, procesamiento y análisis de grandes volúmenes de información geográfica y satelital. Esta herramienta integra un extenso catálogo de imágenes y datos espaciales provenientes de diferentes misiones satelitales, tales como Landsat, Sentinel, MODIS, entre otras, facilitando el desarrollo de análisis ambientales, territoriales y multitemporales de manera eficiente.La integración de Google Earth Engine con QGIS mediante su plugin oficial permite conectar el entorno SIG de escritorio con las capacidades de procesamiento en la nube de GEE, optimizando los flujos de trabajo asociados al análisis espacial y teledetección. A través de este complemento es posible visualizar imágenes satelitales, ejecutar scripts, acceder a colecciones de datos geoespaciales y realizar procesos de análisis raster sin necesidad de descargar grandes volúmenes de información localmente.El uso de Google Earth Engine representa una herramienta fundamental en aplicaciones relacionadas con monitoreo ambiental, análisis de cobertura y uso del suelo, detección de cambios, evaluación de recursos naturales y gestión territorial. Además, su capacidad de procesamiento distribuido permite ejecutar análisis complejos sobre extensas áreas geográficas en tiempos considerablemente reducidos.En el desarrollo del presente taller se realizó la instalación y configuración del plugin de Google Earth Engine en QGIS, con el propósito de explorar sus funcionalidades básicas y fortalecer las competencias en el uso de plataformas de análisis geoespacial en la nube aplicadas a la geomática.</p>
+<div id="fig-mapa-nieve" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-mapa-nieve-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="data_taller04052026/Vias_y_lotes.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-mapa-nieve-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;3: Zona de estudio - Catatumbo (capas de lotes y vías)
+</figcaption>
+</figure>
+</div>
+<div id="fig-mapa-nieve" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-mapa-nieve-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="data_taller04052026/Area_catatumbo.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-mapa-nieve-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;4: Zona de estudio - Catatumbo (área de estudio)
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="geoai" class="level1" data-number="6">
+<h1 data-number="6"><span class="header-section-number">6</span> GEOAI</h1>
+<p>Se utiliza la herramienta GEOAI con los mapas base que se tienen para el proyecto en donde se utiliza la capa de pendientes que se implemento para el taller de analisis de modelos de QGIS, para este caso se cargo dentro del GEOAI “PENDIENTES”. Para este caso se utiliza el Model : Caption, el prompt: Pendientes y el Lenght: Normal. Para el el Export Training Data, se genera:</p>
+<ul>
+<li>Format: PASCAL_VOC</li>
+<li>Tile Size: 640</li>
+</ul>
+<p>Finalmente se obtiene:</p>
+<p><em>This figure presents a detailed topographic and geological representation of the study area using a color palette composed of brown, beige, gray, and blue tones. The map displays a three-dimensional appearance through shading and elevation variations, allowing the visualization of terrain morphology and relief characteristics. Hydrological features such as rivers and streams are represented in blue, contrasting with the surrounding land surfaces. Additionally, several green points are distributed throughout the map, indicating locations or features of particular interest associated with the geological or territorial analysis. The map is oriented with north at the top and includes a scale bar, place labels, and a legend that provides additional information regarding the represented spatial features and symbology.</em></p>
+<div id="fig-mapa-nieve" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-mapa-nieve-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="data_taller04052026/GEOAI_PENDIENTE_TOPOGRAFIA.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-mapa-nieve-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figura&nbsp;5: GEOIA Pendiente y topografía
+</figcaption>
+</figure>
+</div>
 </section>
 
 </main>
