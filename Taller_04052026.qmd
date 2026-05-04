@@ -96,3 +96,25 @@ La instalación del plugin se realizó desde el administrador de complementos de
 ---
 
 # Google Earth Engine (GEE)
+
+Google Earth Engine (GEE) es una plataforma de computación geoespacial basada en la nube, desarrollada por Google, que permite el almacenamiento, procesamiento y análisis de grandes volúmenes de información geográfica y satelital. Esta herramienta integra un extenso catálogo de imágenes y datos espaciales provenientes de diferentes misiones satelitales, tales como Landsat, Sentinel, MODIS, entre otras, facilitando el desarrollo de análisis ambientales, territoriales y multitemporales de manera eficiente.La integración de Google Earth Engine con QGIS mediante su plugin oficial permite conectar el entorno SIG de escritorio con las capacidades de procesamiento en la nube de GEE, optimizando los flujos de trabajo asociados al análisis espacial y teledetección. A través de este complemento es posible visualizar imágenes satelitales, ejecutar scripts, acceder a colecciones de datos geoespaciales y realizar procesos de análisis raster sin necesidad de descargar grandes volúmenes de información localmente.El uso de Google Earth Engine representa una herramienta fundamental en aplicaciones relacionadas con monitoreo ambiental, análisis de cobertura y uso del suelo, detección de cambios, evaluación de recursos naturales y gestión territorial. Además, su capacidad de procesamiento distribuido permite ejecutar análisis complejos sobre extensas áreas geográficas en tiempos considerablemente reducidos.En el desarrollo del presente taller se realizó la instalación y configuración del plugin de Google Earth Engine en QGIS, con el propósito de explorar sus funcionalidades básicas y fortalecer las competencias en el uso de plataformas de análisis geoespacial en la nube aplicadas a la geomática.
+
+![Zona de estudio - Catatumbo (capas de lotes y vías)](data_taller04052026/Vias_y_lotes.png){#fig-mapa-nieve fig-align="center" width="70%"}
+
+![Zona de estudio - Catatumbo (área de estudio)](data_taller04052026/Area_catatumbo.png){#fig-mapa-nieve fig-align="center" width="70%"}
+
+# GEOAI
+
+Se utiliza la herramienta GEOAI con los mapas base que se tienen para el proyecto en donde se utiliza la capa de pendientes que se implemento para el taller de analisis de modelos de QGIS, para este caso se cargo dentro del GEOAI "PENDIENTES". Para este caso se utiliza el Model : Caption, el prompt: Pendientes y el Lenght: Normal.
+Para el el Export Training Data, se genera:
+
+- Format: PASCAL_VOC
+- Tile Size: 640
+
+Finalmente se obtiene:
+
+*This figure presents a detailed topographic and geological representation of the study area using a color palette composed of brown, beige, gray, and blue tones. The map displays a three-dimensional appearance through shading and elevation variations, allowing the visualization of terrain morphology and relief characteristics. Hydrological features such as rivers and streams are represented in blue, contrasting with the surrounding land surfaces. Additionally, several green points are distributed throughout the map, indicating locations or features of particular interest associated with the geological or territorial analysis. The map is oriented with north at the top and includes a scale bar, place labels, and a legend that provides additional information regarding the represented spatial features and symbology.*
+
+![Zona de estudio - Catatumbo (área de estudio)](data_taller04052026/Area_catatumbo.png){#fig-mapa-nieve fig-align="center" width="70%"}
+
+
